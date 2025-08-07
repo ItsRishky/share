@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
             shareFile({
                 filename: file.name,
                 total_buffer_size: buffer.length,
-                buffer_size: 64 * 1024 // 64KB chunks
+                buffer_size: 256 * 1024 // 256KB chunks
             }, buffer, el.querySelector(".progress"), function() {
                 processQueue(); // Process next file after completion
             });
